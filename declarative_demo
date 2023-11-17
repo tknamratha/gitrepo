@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+
+    stages {
+        stage("Git checkout") {
+            steps {
+                git crendentialsId: 'github' ,url: "https://github.com/tknamratha/gitrepo/new/master
+            }
+        }
+    }
+}
